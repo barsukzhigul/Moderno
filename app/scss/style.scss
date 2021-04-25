@@ -379,7 +379,7 @@
 //end advantages
 
 //start author
-.author{
+.author {
   background-image: url(../images/author-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -388,7 +388,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &__box{
+
+  &__box {
     max-width: 650px;
     min-height: 215px;
     display: flex;
@@ -397,22 +398,56 @@
     background-color: $green;
     width: 100%;
   }
-  &__title{
+
+  &__title {
     font-size: 30px;
     line-height: 30px;
     color: #FFFFFF;
     margin-right: 45px;
     max-width: 270px;
-    span{
+
+    span {
       @include f700;
     }
   }
-  &__link{
+
+  &__link {
     font-size: 18px;
     line-height: 36px;
     padding: 15px 40px;
     background-color: #fff;
   }
 }
-
 //end author
+
+//start tutorial
+.tutorial{
+  padding: 70px 0 120px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    max-width: 370px;
+    width: 100%;
+  }
+}
+.tutorial__item{
+  &-image {
+    min-height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &-title{
+    @include f700;
+    font-size: 24px;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 30px 15px;
+    color: $blue-dark;
+  }
+}
+
+
+//end tutorial
