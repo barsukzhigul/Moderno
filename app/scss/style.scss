@@ -82,14 +82,14 @@
     padding-bottom: 10px;
     line-height: 72px;
     font-size: 48px;
-    font-weight: 700;
+    @include f700;
   }
 
   &-text {
     padding-bottom: 40px;
     line-height: 30px;
     font-size: 20px;
-    font-weight: 500;
+    @include f500;
   }
 
   &-form {
@@ -105,7 +105,7 @@
       border-radius: 4px;
       border: none;
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
       outline: none;
       padding-left: 25px;
       padding-right: 60px;
@@ -188,7 +188,7 @@
     justify-content: space-between;
     padding: 10px 30px;
     align-items: center;
-    font-weight: 500;
+    @include f500;
     min-height: 90px;
     border: 1px solid #e7ecf2;
   }
@@ -212,7 +212,7 @@
   &-price {
     font-size: 20px;
     color: $blue-dark;
-    font-weight: 700;
+    @include f700;
   }
 
   &-info {
@@ -241,7 +241,7 @@
 
     span {
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
     }
   }
 
@@ -310,5 +310,70 @@
   }
 }
 
-
 //end product-slider
+
+//start advantages
+.advantages {
+  background-color: $blue-dark;
+  padding: 110px 0;
+}
+
+.advantages__title {
+  color: #FFFFFF;
+}
+
+.advantages__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  max-width: 370px;
+  text-align: center;
+  padding: 0 15px;
+
+  &:hover {
+    .advantages__item-icon {
+      background-color: $green;
+
+      svg {
+        fill: #FFFFFF;
+      }
+    }
+
+    .advantages__item-title {
+      color: $green;
+    }
+  }
+
+  svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  &-icon {
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    transition: all .3s;
+  }
+
+  &-title {
+    @include f500;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    transition: all .3s;
+  }
+
+  &-text {
+    font-size: 15px;
+  }
+}
+
+//end advantages
